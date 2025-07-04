@@ -1,3 +1,7 @@
+## Please note
+
+This app is vibe coded, and that goes for this README as well. I plan to clean this up in the future, but for now this information might be incorrect, the code might be error prone and you use the app at your own risk!
+
 # Rustydoro
 
 Rustydoro is a minimalist Pomodoro timer designed for focus. Instead of a traditional clock, it uses a subtle, full-window color transition to indicate the passage of time, creating a calm and unobtrusive user experience.
