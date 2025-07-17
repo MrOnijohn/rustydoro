@@ -41,7 +41,7 @@ When the timer is idle, paused, or complete, the window is a calm turquoise colo
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/rustydoro.git
+    git clone https://github.com/MrOnijohn/rustydoro.git
     cd rustydoro
     ```
 2.  **Build and run the application:**
