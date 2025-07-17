@@ -6,7 +6,7 @@ This app is vibe coded, and that goes for this README as well. I plan to clean t
 
 Rustydoro is a minimalist Pomodoro timer designed for focus. Instead of a traditional clock, it uses a subtle, full-window color transition to indicate the passage of time, creating a calm and unobtrusive user experience.
 
-The timer progresses through a 30-minute cycle, changing from a calming turquoise to an energizing yellow, then to a focused red, and finally to black, signaling the end of the session.
+The timer is turqouise at idle and then progresses through a 30-minute cycle, changing from green to yellow, to red, and finally to black, signaling the end of the session when the window turns turqouise again.
 
 ## Features
 
@@ -53,6 +53,7 @@ When the timer is idle, paused, or complete, the window is a calm turquoise colo
 ## Usage
 
 - **Launch the application:** Run the executable from your terminal or file explorer.
+- I recommend putting the window to one side of the screen, making it as thin as needed/wanted, and doing work in a window next to it. The point is to not have to check a timer to see how long there is left of a focus session, but instead get an intuitive feel for how much time is left by having a color in the side of your vision.
 - **Start the timer:** Left-click anywhere in the window or press `Ctrl+Alt+S`.
 - **Pause the timer:** Left-click while the timer is running or press `Ctrl+Alt+P`.
 - **Reset the timer:** Right-click anywhere in the window.
