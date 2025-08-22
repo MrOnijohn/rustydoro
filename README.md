@@ -44,15 +44,48 @@ When the timer is idle, paused, or complete, the window is a calm turquoise colo
     git clone https://github.com/MrOnijohn/rustydoro.git
     cd rustydoro
     ```
-2.  **Build and run the application:**
+2.  **Build the application:**
     ```bash
-    cargo run --release
+    cargo build --release
     ```
-    The `--release` flag is recommended for better performance.
+    The `--release` flag is recommended for better performance. The executable will be located at `target/release/rustydoro`.
+
+### Desktop Integration (Linux)
+
+For a more convenient desktop experience, you can create a `.desktop` file to launch Rustydoro from your application menu.
+
+1.  **Install the executable:**
+    Move the compiled binary to a directory in your `$PATH`. A common choice is `~/.local/bin`:
+    ```bash
+    mkdir -p ~/.local/bin
+    cp target/release/rustydoro ~/.local/bin/
+    ```
+
+2.  **Create a `.desktop` file:**
+    Create a file named `rustydoro.desktop` in `~/.local/share/applications/` with the following content:
+    ```ini
+    [Desktop Entry]
+    Name=Rustydoro
+    Comment=A minimalist Pomodoro timer
+    Exec=rustydoro
+    Icon=/home/john/Programmering/Rust/rustydoro/assets/icons/icon-256x256.png
+    Terminal=false
+    Type=Application
+    Categories=Utility;
+    ```
+    *Note: Make sure the `Icon` path is correct. You may need to adjust it depending on where you cloned the repository.*
+
+3.  **Update the desktop database:**
+    Run the following command to register the new desktop entry:
+    ```bash
+    update-desktop-database ~/.local/share/applications
+    ```
+
+After these steps, you should be able to find and launch Rustydoro from your application menu.
 
 ## Usage
 
-- **Launch the application:** Run the executable from your terminal or file explorer.
+- **Launch the application:** Run the executable from your terminal, or from your desktop environment if you completed the desktop integration.
 - I recommend putting the window to one side of the screen, making it as thin as needed/wanted, and doing work in a window next to it. The point is to not have to check a timer to see how long there is left of a focus session, but instead get an intuitive feel for how much time is left by having a color in the side of your vision.
 - **Start the timer:** Left-click anywhere in the window or press `Ctrl+Alt+S`.
 - **Pause the timer:** Left-click while the timer is running or press `Ctrl+Alt+P`.
